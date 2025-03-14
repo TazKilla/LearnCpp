@@ -15,7 +15,8 @@
 //#include "StudyPlan/TypesAndVariables/variable_creation.cpp"
 //#include "StudyPlan/TypesAndVariables/numbers.cpp"
 //#include "StudyPlan/TypesAndVariables/booleans.cpp"
-#include "StudyPlan/TypesAndVariables/types_and_literals.cpp"
+//#include "StudyPlan/TypesAndVariables/types_and_literals.cpp"
+#include "ProgrammerEnC++Moderne/18_les_patrons_de_fonctions.cpp"
 
 /**
  * @brief Main function, only used to call the run() function
@@ -25,7 +26,10 @@
  */
 int main(int, char**){
 
-    TypesAndLiterals::run();
+    //TypesAndLiterals::run();
+    PatronsDeFonctions::run_1_2();
+    PatronsDeFonctions::run_1_3_1();
+    PatronsDeFonctions::run_1_3_2();
     
     return 0;
 }
