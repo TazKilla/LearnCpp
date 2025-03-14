@@ -3,6 +3,7 @@
  * @author Guillaume Roche (guilohm.roche@gmail.com)
  * @brief Main file used to follow Studyplan's C++ tutorial
  *        that you can find here: https://www.studyplan.dev/cpp
+ *        and Programmer en C++ moderne, from Claude Delannoy, 2019
  * @version 0.1
  * @date 2025-03-12
  * 
@@ -10,9 +11,11 @@
 
 #include <iostream>
 
-//#include "TypesAndVariables/hello_world.cpp"
-//#include "TypesAndVariables/variable_creation.cpp"
-#include "TypesAndVariables/numbers.cpp"
+//#include "StudyPlan/TypesAndVariables/hello_world.cpp"
+//#include "StudyPlan/TypesAndVariables/variable_creation.cpp"
+//#include "StudyPlan/TypesAndVariables/numbers.cpp"
+//#include "StudyPlan/TypesAndVariables/booleans.cpp"
+#include "StudyPlan/TypesAndVariables/types_and_literals.cpp"
 
 /**
  * @brief Main function, only used to call the run() function
@@ -22,7 +25,7 @@
  */
 int main(int, char**){
 
-    run();
+    TypesAndLiterals::run();
     
     return 0;
 }
