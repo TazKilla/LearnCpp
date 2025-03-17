@@ -23,7 +23,7 @@ namespace PatronsDeFonctions {
     // Cette technique nous pousse à créer une fonction par type, alors
     // que rien d'autre ne change d'une fonction à l'autre.
     // Nous pouvons simplifier les choses en définissant un seul patron
-    // fonctions :
+    // de fonctions :
     // cf fichier 18_patrons.hpp, fonction minimum()
 
 
@@ -179,5 +179,50 @@ namespace PatronsDeFonctions {
 
     // 2.4 - Limitations des patrons de fonction
     // -----------------------------------------
+
+    // Pour un patron avec l'en-tête suivant :
+    //      template <typename T> void fct(T)
+    // nous pouvons appeler fct avec n'importe quel type d'argument :
+    // int, foat, int *, int **, t, t * ou même t **.
+
+    // Cependant, si l'argument est un pointeur :
+    //      template <typename T> void fct(T*)
+    // il nous faut appeler fct avec un pointeur sur un type quelconque :
+    // int *, int **, t * ou t **.
+
+    // Enfin, le patron peut contenir des instrucitons qui vont limiter
+    // les types utilisables :
+    //      template <typename T> T minimum(T a, T b) {
+    //          return a < b ? a : b;
+    //      }
+    // Le patron ci-dessus ne peut être appelé qu'avec des types classe
+    // dans lesquels l'opérateur < a été surdéfini.
+    
+    //      template <typename T> void fct(T) {
+    //          ...
+    //          T x(2, 5);
+    //          ...
+    //      }
+    // Le patron ci-dessus ne peut être appelé qu'avec des types qui
+    // possedent un constructeur à deux arguments.
+
+
+    // 2.5 - Le type initialize_list et les patrons de fonctions (C++11)
+    // -----------------------------------------------------------------
+
+    // cf fichier 18_patrons.hpp, fonction f()
+
+    void run_2_5() {
+        f({1.5, 2.3});
+        // f({});       // liste vide : T ne peut pas être déduit -> erreur de compilation
+        // f({1.25, 5, 9, 3.4, 7});     // ambiguité
+        f<float>({1.25, 5, 9, 3.4, 7}); // que l'on peut lever ainsi.
+    }
+
+
+    // 2.6 - Paramètres de type par défaut (C++11)
+    // -------------------------------------------
+
+    
 
 } // namespace PatronsDeFonctions

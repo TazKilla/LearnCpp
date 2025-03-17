@@ -30,6 +30,8 @@ int main(int, char**){
     PatronsDeFonctions::run_1_2();
     PatronsDeFonctions::run_1_3_1();
     PatronsDeFonctions::run_1_3_2();
+
+    PatronsDeFonctions::run_2_5();
     
     return 0;
 }
