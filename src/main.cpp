@@ -11,12 +11,12 @@
 
 #include <iostream>
 
-//#include "StudyPlan/TypesAndVariables/hello_world.cpp"
-//#include "StudyPlan/TypesAndVariables/variable_creation.cpp"
-//#include "StudyPlan/TypesAndVariables/numbers.cpp"
-//#include "StudyPlan/TypesAndVariables/booleans.cpp"
-//#include "StudyPlan/TypesAndVariables/types_and_literals.cpp"
-#include "ProgrammerEnC++Moderne/18_les_patrons_de_fonctions.cpp"
+//#include "ProgrammerEnC++Moderne/18_les_patrons_de_fonctions.cpp"
+//#include "StudyPlan/TypesAndVariables/00_lo_world.cpp"
+//#include "StudyPlan/TypesAndVariables/01_variable_creation.cpp"
+//#include "StudyPlan/TypesAndVariables/02_numbers.cpp"
+//#include "StudyPlan/TypesAndVariables/03_booleans.cpp"
+#include "StudyPlan/TypesAndVariables/04_types_and_literals.cpp"
 
 /**
  * @brief Main function, only used to call the run() function
@@ -26,12 +26,12 @@
  */
 int main(int, char**){
 
-    //TypesAndLiterals::run();
-    PatronsDeFonctions::run_1_2();
+    TypesAndLiterals::run();
+    /*PatronsDeFonctions::run_1_2();
     PatronsDeFonctions::run_1_3_1();
     PatronsDeFonctions::run_1_3_2();
 
-    PatronsDeFonctions::run_2_5();
+    PatronsDeFonctions::run_2_5();*/
     
     return 0;
 }
