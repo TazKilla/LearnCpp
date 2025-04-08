@@ -12,11 +12,16 @@
 #include <iostream>
 
 //#include "ProgrammerEnC++Moderne/18_les_patrons_de_fonctions.cpp"
-//#include "StudyPlan/TypesAndVariables/00_lo_world.cpp"
-//#include "StudyPlan/TypesAndVariables/01_variable_creation.cpp"
-//#include "StudyPlan/TypesAndVariables/02_numbers.cpp"
-//#include "StudyPlan/TypesAndVariables/03_booleans.cpp"
-#include "StudyPlan/TypesAndVariables/04_types_and_literals.cpp"
+//#include "StudyPlan/01_TypesAndVariables/00_lo_world.cpp"
+//#include "StudyPlan/01_TypesAndVariables/01_variable_creation.cpp"
+//#include "StudyPlan/01_TypesAndVariables/02_numbers.cpp"
+//#include "StudyPlan/01_TypesAndVariables/03_booleans.cpp"
+//#include "StudyPlan/01_TypesAndVariables/04_types_and_literals.cpp"
+//#include "StudyPlan/02_FunctionsConditionalsAndLoops/01_create_and_call_functions.cpp"
+//#include "StudyPlan/02_FunctionsConditionalsAndLoops/02_call_stack_and_debugging_functions.cpp"
+//#include "StudyPlan/02_FunctionsConditionalsAndLoops/07_arguments.cpp"
+//#include "StudyPlan/02_FunctionsConditionalsAndLoops/05_fizz_buzz.cpp"
+#include "StudyPlan/03_ClassesAndStructs/01_abstraction_and_classes.cpp"
 
 /**
  * @brief Main function, only used to call the run() function
@@ -26,7 +31,13 @@
  */
 int main(int, char**){
 
-    TypesAndLiterals::run();
+    //TypesAndLiterals::run();
+    //CreateAndCallFunctions::run();
+    //CallStackAndDebuggingFunctions::run();
+    //FunctionArgumentsAndParameters::run();
+    //FizzBuzz();
+    AbstractionAndClasses::run();
+
     /*PatronsDeFonctions::run_1_2();
     PatronsDeFonctions::run_1_3_1();
     PatronsDeFonctions::run_1_3_2();
