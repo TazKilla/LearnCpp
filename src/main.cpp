@@ -21,7 +21,10 @@
 //#include "StudyPlan/02_FunctionsConditionalsAndLoops/02_call_stack_and_debugging_functions.cpp"
 //#include "StudyPlan/02_FunctionsConditionalsAndLoops/07_arguments.cpp"
 //#include "StudyPlan/02_FunctionsConditionalsAndLoops/05_fizz_buzz.cpp"
-#include "StudyPlan/03_ClassesAndStructs/01_abstraction_and_classes.cpp"
+//#include "StudyPlan/03_ClassesAndStructs/01_abstraction_and_classes.cpp"
+//#include "StudyPlan/03_ClassesAndStructs/02_encapsulation_and_specifiers.cpp"
+//#include "StudyPlan/03_ClassesAndStructs/03_constructors_and_destructors.cpp"
+#include "StudyPlan/03_ClassesAndStructs/04_structs_and_aggregate_initialization.cpp"
 
 /**
  * @brief Main function, only used to call the run() function
@@ -36,7 +39,10 @@ int main(int, char**){
     //CallStackAndDebuggingFunctions::run();
     //FunctionArgumentsAndParameters::run();
     //FizzBuzz();
-    AbstractionAndClasses::run();
+    //AbstractionAndClasses::run();
+    //EncapsulationAndSpecifiers::run();
+    //ConstructorsAndDestructors::run();
+    StructsAndAggregateInitialization::run();
 
     /*PatronsDeFonctions::run_1_2();
     PatronsDeFonctions::run_1_3_1();
