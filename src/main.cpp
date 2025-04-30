@@ -24,7 +24,14 @@
 //#include "StudyPlan/03_ClassesAndStructs/01_abstraction_and_classes.cpp"
 //#include "StudyPlan/03_ClassesAndStructs/02_encapsulation_and_specifiers.cpp"
 //#include "StudyPlan/03_ClassesAndStructs/03_constructors_and_destructors.cpp"
-#include "StudyPlan/03_ClassesAndStructs/04_structs_and_aggregate_initialization.cpp"
+//#include "StudyPlan/03_ClassesAndStructs/04_structs_and_aggregate_initialization.cpp"
+//#include "StudyPlan/03_ClassesAndStructs/05_operator_overloading.cpp"
+//#include "StudyPlan/03_ClassesAndStructs/06_structured_binding.cpp"
+//#include "StudyPlan/04_Inheritance/01_inheritance.cpp"
+//#include "StudyPlan/04_Inheritance/02_protected_class_members.cpp"
+//#include "StudyPlan/04_Inheritance/03_member_initializer_lists.cpp"
+//#include "StudyPlan/04_Inheritance/04_working_with_inherited_memebers.cpp"
+#include "StudyPlan/04_Inheritance/05_references.cpp"
 
 /**
  * @brief Main function, only used to call the run() function
@@ -42,7 +49,14 @@ int main(int, char**){
     //AbstractionAndClasses::run();
     //EncapsulationAndSpecifiers::run();
     //ConstructorsAndDestructors::run();
-    StructsAndAggregateInitialization::run();
+    //StructsAndAggregateInitialization::run();
+    //OperatorOverloading::run();
+    //StructuredBinding::run();
+    //Inheritance::run();
+    //ProtectedClassMembers::run();
+    //MemberInitializerLists::run();
+    //WorkingWithInheritedMembers::run();
+    References::run();
 
     /*PatronsDeFonctions::run_1_2();
     PatronsDeFonctions::run_1_3_1();
