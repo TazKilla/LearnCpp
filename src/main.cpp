@@ -31,7 +31,9 @@
 //#include "StudyPlan/04_Inheritance/02_protected_class_members.cpp"
 //#include "StudyPlan/04_Inheritance/03_member_initializer_lists.cpp"
 //#include "StudyPlan/04_Inheritance/04_working_with_inherited_memebers.cpp"
-#include "StudyPlan/04_Inheritance/05_references.cpp"
+//#include "StudyPlan/05_MemoryReferencesAndPointers/01_references.cpp"
+//#include "StudyPlan/05_MemoryReferencesAndPointers/02_pointers.cpp"
+#include "StudyPlan/05_MemoryReferencesAndPointers/03_the_this_pointer.cpp"
 
 /**
  * @brief Main function, only used to call the run() function
@@ -56,7 +58,9 @@ int main(int, char**){
     //ProtectedClassMembers::run();
     //MemberInitializerLists::run();
     //WorkingWithInheritedMembers::run();
-    References::run();
+    //References::run();
+    //Pointers::run();
+    TheThisPointer::run();
 
     /*PatronsDeFonctions::run_1_2();
     PatronsDeFonctions::run_1_3_1();
