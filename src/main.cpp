@@ -33,7 +33,12 @@
 //#include "StudyPlan/04_Inheritance/04_working_with_inherited_memebers.cpp"
 //#include "StudyPlan/05_MemoryReferencesAndPointers/01_references.cpp"
 //#include "StudyPlan/05_MemoryReferencesAndPointers/02_pointers.cpp"
-#include "StudyPlan/05_MemoryReferencesAndPointers/03_the_this_pointer.cpp"
+//#include "StudyPlan/05_MemoryReferencesAndPointers/03_the_this_pointer.cpp"
+//#include "StudyPlan/05_MemoryReferencesAndPointers/04_dangling_pointers_and_references.cpp"
+//#include "StudyPlan/06_Polymorphism/01_function_overloading.cpp"
+//#include "StudyPlan/06_Polymorphism/02_static_casting.cpp"
+//#include "StudyPlan/06_Polymorphism/03_virtual_functions_and_overrides.cpp"
+#include "StudyPlan/06_Polymorphism/04_downcasting.cpp"
 
 /**
  * @brief Main function, only used to call the run() function
@@ -60,7 +65,12 @@ int main(int, char**){
     //WorkingWithInheritedMembers::run();
     //References::run();
     //Pointers::run();
-    TheThisPointer::run();
+    //TheThisPointer::run();
+    //DanglingPointersAndReferences::run();
+    //FunctionOverloading::run();
+    //StaticCasting::run();
+    //VirtualFunctionsAndOverrides::run();
+    Downcasting::run();
 
     /*PatronsDeFonctions::run_1_2();
     PatronsDeFonctions::run_1_3_1();

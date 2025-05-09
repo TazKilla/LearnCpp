@@ -80,7 +80,84 @@ class Character_2 {
 //
 /////////////////////////////////////////////
 
+struct Vector3 {
+    float x;
+    float y;
+    float z;
 
+    Vector3& operator++() {
+        ++x;
+        ++y;
+        ++z;
+        return *this;
+    }
+
+    Vector3& operator*=(int Multiplier) {
+        x *= Multiplier;
+        y *= Multiplier;
+        z *= Multiplier;
+        return *this;
+    }
+};
+
+// We can do the same with free functions,
+// passing the operand by reference
+
+struct Vector3_2 {
+    float x;
+    float y;
+    float z;
+};
+
+Vector3_2& operator++(Vector3_2& vec) {
+    ++vec.x;
+    ++vec.y;
+    ++vec.z;
+    return vec;
+}
+
+Vector3_2& operator*=(Vector3_2& vec, int mult) {
+    vec.x *= mult;
+    vec.y *= mult;
+    vec.z *= mult;
+    return vec;
+}
+
+/////////////////////////////////////////////
+//
+//      Prefix and postfix operators
+//
+/////////////////////////////////////////////
+
+int x{5};
+int y{5};
+
+/////////////////////////////////////////////
+//
+//      Overloading postfix operators
+//
+/////////////////////////////////////////////
+
+struct Vector3_3 {
+    float x;
+    float y;
+    float z;
+
+    // Prefix operator
+    Vector3_3 operator++() {
+        ++x;
+        ++y;
+        ++z;
+        return *this;
+    }
+
+    // Postfix operator
+    Vector3_3 operator++(int) {
+        Vector3_3 temp{*this};  // Create a copy from original
+        ++(*this);              // Increment original with prefix operator
+        return temp;            // Return the copy
+    }
+};
 
 namespace TheThisPointer{
 
@@ -106,5 +183,31 @@ namespace TheThisPointer{
             .SetName("Goblin Warrior")
             .SetLevel(10)
             .Log();
+        
+        /////////////////////////////////////////
+
+        Vector3 SomeVector{1.0, 2.0, 3.0};
+
+        (++SomeVector) *= 2;
+
+        cout << "x = " << SomeVector.x
+            << ", y = " << SomeVector.y
+            << ", z = " << SomeVector.z << endl;
+
+        Vector3_2 SomeVector_2{1.0, 2.0, 3.0};
+
+        (++SomeVector_2) *= 2;
+
+        cout << "x = " << SomeVector_2.x
+            << ", y = " << SomeVector_2.y
+            << ", z = " << SomeVector_2.z << endl;
+
+        /////////////////////////////////////////
+
+        cout << "x++: " << x++
+            << " (x is now " << x << ")" << endl;
+
+        cout << "++y: " << ++y
+            << " (x is now " << y << ")" << endl;
     }
 }
