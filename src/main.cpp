@@ -58,7 +58,11 @@
 //#include "StudyPlan/09_ArraysAndDynamicMemory/04_managing_memory_manually.cpp"
 
 //#include "StudyPlan/10_CleanCode/01_automatic_type_detection_using_auto.cpp"
-#include "StudyPlan/10_CleanCode/02_constants_and_const_correctness.cpp"
+//#include "StudyPlan/10_CleanCode/02_constants_and_const_correctness.cpp"
+//#include "StudyPlan/10_CleanCode/03_effective_comments_and_javadoc.cpp"
+
+//#include "StudyPlan/11_OddsAndEnds/01_random_number_generation.cpp"
+#include "StudyPlan/11_OddsAndEnds/02_dates_times_and_durations.cpp"
 
 /**
  * @brief Main function, only used to call the run() function
@@ -121,14 +125,12 @@ int main(int, char**){
     DynamicArraysUsingStdVectors::run_10();
     DynamicArraysUsingStdVectors::run_11();
     DynamicArraysUsingStdVectors::run_12();
-    DynamicArraysUsingStdVectors::run_13();*/
-
-    /*MemoryOwnershipAndSmartPointers::run();
+    DynamicArraysUsingStdVectors::run_13();
+    MemoryOwnershipAndSmartPointers::run();
     MemoryOwnershipAndSmartPointers::run_2();
     MemoryOwnershipAndSmartPointers::run_3();
-    MemoryOwnershipAndSmartPointers::run_4();*/
-
-    /*CopyConstructorsAndOperators::run();
+    MemoryOwnershipAndSmartPointers::run_4();
+    CopyConstructorsAndOperators::run();
     CopyConstructorsAndOperators::run_2();
     CopyConstructorsAndOperators::run_3();
     CopyConstructorsAndOperators::run_4();
@@ -139,14 +141,13 @@ int main(int, char**){
     CopyConstructorsAndOperators::run_9();
     CopyConstructorsAndOperators::run_10();
     CopyConstructorsAndOperators::run_11();
-    CopyConstructorsAndOperators::run_12();*/
-
-    /*ManagingMemoryManually::run();
+    CopyConstructorsAndOperators::run_12();
+    ManagingMemoryManually::run();
     ManagingMemoryManually::run_2();
     ManagingMemoryManually::run_3();
-    ManagingMemoryManually::run_4();*/
+    ManagingMemoryManually::run_4()*/
 
-    /*AutomaticTypeDetectionUsingAuto::run();*/
+    /*AutomaticTypeDetectionUsingAuto::run();
     ConstantsAndConstCorrectness::run();
     ConstantsAndConstCorrectness::run_2();
     ConstantsAndConstCorrectness::run_3();
@@ -165,6 +166,14 @@ int main(int, char**){
     ConstantsAndConstCorrectness::run_16();
     ConstantsAndConstCorrectness::run_17();
     ConstantsAndConstCorrectness::run_18();
+    EffectiveCommentsAndJavadoc::run();*/
+
+    /*RandomNumberGeneration::run();
+    RandomNumberGeneration::run_2();
+    RandomNumberGeneration::run_3();*/
+    DatesTimesAndDurations::run();
+    DatesTimesAndDurations::run_2();
+    DatesTimesAndDurations::run_3();
 
     ///////////////////////////////////////////////////////
     //

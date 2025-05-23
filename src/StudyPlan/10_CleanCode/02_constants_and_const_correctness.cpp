@@ -226,7 +226,18 @@ void Report(const Character_5& Input) {
 //
 /////////////////////////////////////////////
 
+class Character_6 {
+    public:
+        int GetHealth() const {
+            // This will not work without the mutable qualifier
+            ++mHealthRequests;
+            return mHealth;
+        }
 
+    private:
+        int mHealth{100};
+        mutable int mHealthRequests{0};
+};
 
 namespace ConstantsAndConstCorrectness {
 
