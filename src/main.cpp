@@ -62,7 +62,8 @@
 //#include "StudyPlan/10_CleanCode/03_effective_comments_and_javadoc.cpp"
 
 //#include "StudyPlan/11_OddsAndEnds/01_random_number_generation.cpp"
-#include "StudyPlan/11_OddsAndEnds/02_dates_times_and_durations.cpp"
+//#include "StudyPlan/11_OddsAndEnds/02_dates_times_and_durations.cpp"
+#include "StudyPlan/11_OddsAndEnds/03_string_interpolation.cpp"
 
 /**
  * @brief Main function, only used to call the run() function
@@ -170,10 +171,25 @@ int main(int, char**){
 
     /*RandomNumberGeneration::run();
     RandomNumberGeneration::run_2();
-    RandomNumberGeneration::run_3();*/
+    RandomNumberGeneration::run_3();
     DatesTimesAndDurations::run();
     DatesTimesAndDurations::run_2();
     DatesTimesAndDurations::run_3();
+    DatesTimesAndDurations::run_4();
+    DatesTimesAndDurations::run_5();
+    DatesTimesAndDurations::run_6();
+    DatesTimesAndDurations::run_7();
+    DatesTimesAndDurations::run_8();
+    DatesTimesAndDurations::run_9();
+    DatesTimesAndDurations::run_10();*/
+
+    StringInterpolation::run();
+    StringInterpolation::run_2();
+    StringInterpolation::run_3();
+    StringInterpolation::run_4();
+    StringInterpolation::run_5();
+    StringInterpolation::run_6();
+    StringInterpolation::run_7();
 
     ///////////////////////////////////////////////////////
     //
