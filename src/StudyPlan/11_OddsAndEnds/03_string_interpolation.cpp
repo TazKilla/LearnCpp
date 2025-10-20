@@ -1,6 +1,7 @@
 #include <iostream>
 //#include <format>
 //#include <print>
+#include <boost/format.hpp>
 
 using namespace std;
 
@@ -76,6 +77,14 @@ namespace StringInterpolation {
             )
         };
         cout << Fruits << endl;*/
+
+        // Lets try it with boost::format
+        cout << boost::format{"I have %1% apples"} % 5 << endl;
+        string Fruits{
+            (boost::format{"%1% apples, %2% bananas and %3% pears"} % 5 % 2 % 8).str()
+        };
+        cout << Fruits << endl;
+        //cout << boost::format{"%1% apples, %2% bananas and %3% pears"} % 5 % 2 % 8 << endl;
     }
 
     void run_2() {
@@ -138,7 +147,7 @@ namespace StringInterpolation {
     }
 
     void run_7() {
-        string Fruit{
+        /*string Fruit{
             std::format("I have {:6} apples", 3)
         };
 
@@ -161,7 +170,7 @@ namespace StringInterpolation {
              
             << format(
                 "{:8} | {:5} | {:6} |",
-                "Pears", "213", "106.35") << endl;
+                "Pears", "213", "106.35") << endl;*/
         // The output should be:
         /*  Item     | Sales | Profit |
             Apples   |    53 |   8.21 |
